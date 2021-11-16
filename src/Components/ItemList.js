@@ -1,13 +1,16 @@
-import Item from "./Item";
-
-const productos = (data) => {
-    return new Promise ((resolve, eject)=>{
-        if (productos.length>0){
+import Item from './Item';
+const datos = () => {
+    return new Promise ((resolve, reject)=>{
+        if (Item.productos.length>0){
             setTimeout (()=>{
-                resolve(data)
+                resolve(Item.productos)
             },1000);
         } else {
             reject ("Error")
         }
     })
 }
+datos ()
+ .then (data => console.log (data))
+ .catch ((err) => console.log (err))
+export default ItemList;
