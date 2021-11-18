@@ -1,6 +1,6 @@
 import React from 'react';
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
+import ItemCount from './ItemCount';
 class ItemListContainer extends React.Component {
     render() {
       return (
